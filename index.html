@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EZLY</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>EZLY</h1>
+
+        <p class="tagline">Easy to find yours.</p>
+
+    </header>
+
+
+    <nav class="main-nav">
+
+        <a href="collections.html">Collections</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <main>
+
+        <section class="recent-collection">
+
+            <h2>Recent Collection</h2>
+
+
+            <div class="slider">
+
+                <button
+                    class="slider-button previous"
+                    onclick="previousImage()">
+                    &#8592;
+                </button>
+
+
+                <img
+                    id="slider-image"
+                    src="collection-1.jpg"
+                    alt="EZLY Recent Collection"
+                >
+
+
+                <button
+                    class="slider-button next"
+                    onclick="nextImage()">
+                    &#8594;
+                </button>
+
+            </div>
+
+
+            <div class="slider-dots">
+
+                <span
+                    class="dot active"
+                    onclick="showImage(0)">
+                </span>
+
+                <span
+                    class="dot"
+                    onclick="showImage(1)">
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 EZLY. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

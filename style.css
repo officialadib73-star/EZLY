@@ -1,0 +1,476 @@
+/* ==================================================
+   EZLY — FINAL BALANCED DESIGN
+   ================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* ==================================================
+   BASIC
+   ================================================== */
+
+body {
+    background-color: #11110F;
+    color: #F1EDE3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 55px;
+}
+
+
+/* ==================================================
+   BRAND HEADER
+   ================================================== */
+
+h1 {
+    font-size: 76px;
+    font-weight: normal;
+    letter-spacing: 11px;
+    margin: 0 0 8px 0;
+}
+
+.tagline {
+    font-size: 17px;
+    letter-spacing: 3px;
+    opacity: 0.65;
+    margin: 0;
+}
+
+
+/* ==================================================
+   NAVIGATION
+   ================================================== */
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 55px 60px 0 60px;
+}
+
+.main-nav a {
+    color: #F1EDE3;
+    text-decoration: none;
+
+    font-size: 15px;
+    letter-spacing: 1.5px;
+
+    transition: opacity 0.3s ease;
+}
+
+.main-nav a:hover {
+    opacity: 0.5;
+}
+
+
+/* ==================================================
+   RECENT COLLECTION
+   ================================================== */
+
+.recent-collection {
+    margin-top: 65px;
+}
+
+.recent-collection h2 {
+    font-size: 24px;
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    margin: 0 0 30px 0;
+}
+
+
+/* ==================================================
+   IMAGE SLIDER
+   ================================================== */
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+}
+
+.slider img {
+    width: 65%;
+    max-width: 900px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* ==================================================
+   SLIDER ARROWS
+   ================================================== */
+
+.slider-button {
+    background: none;
+    border: none;
+
+    color: #F1EDE3;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    transition: opacity 0.3s ease;
+}
+
+.slider-button:hover {
+    opacity: 0.5;
+}
+
+
+/* ==================================================
+   SLIDER DOTS
+   ================================================== */
+
+.slider-dots {
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: #F1EDE3;
+
+    opacity: 0.3;
+
+    margin: 0 5px;
+
+    cursor: pointer;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+
+/* ==================================================
+   COLLECTIONS PAGE
+   ================================================== */
+
+.collection-page {
+    margin-top: 70px;
+}
+
+.collection-page h2 {
+    font-size: 26px;
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    margin: 0 0 45px 0;
+}
+
+.collection-menu {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.collection-menu button {
+    width: 220px;
+
+    padding: 15px 20px;
+
+    background-color: #E8E1D3;
+    color: #11110F;
+
+    border: none;
+
+    font-size: 14px;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+
+    transition: opacity 0.3s ease;
+}
+
+.collection-menu button:hover {
+    opacity: 0.8;
+}
+
+
+/* ==================================================
+   PRODUCT PAGE
+   ================================================== */
+
+.product-page {
+    margin-top: 65px;
+}
+
+.product-page h2 {
+    font-size: 26px;
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    margin: 0 0 45px 0;
+}
+
+
+/* ==================================================
+   PRODUCT GRID
+   ================================================== */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+}
+
+
+/* ==================================================
+   PRODUCT CARD
+   ================================================== */
+
+.product-card {
+    text-align: left;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    transition: opacity 0.3s ease;
+}
+
+.product-card img:hover {
+    opacity: 0.8;
+}
+
+.product-card h3 {
+    font-size: 15px;
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+    margin: 16px 0 6px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+
+    margin: 0;
+
+    opacity: 0.65;
+}
+
+
+/* ==================================================
+   ABOUT / CONTACT
+   ================================================== */
+
+.info-page {
+    max-width: 650px;
+
+    margin: 100px auto 0 auto;
+
+    padding: 0 30px;
+}
+
+.info-page h2 {
+    font-size: 26px;
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+    margin: 0 0 35px 0;
+}
+
+.info-page p {
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    opacity: 0.75;
+
+    margin: 0 0 20px 0;
+}
+
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+    margin: 70px 20px 25px 20px;
+}
+
+footer p {
+    font-size: 12px;
+
+    margin: 0;
+
+    opacity: 0.6;
+}
+
+
+/* ==================================================
+   MOBILE VERSION
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 40px;
+    }
+
+
+    /* BRAND */
+
+    h1 {
+        font-size: 52px;
+        letter-spacing: 7px;
+
+        margin-bottom: 7px;
+    }
+
+    .tagline {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+
+    /* NAVIGATION */
+
+    .main-nav {
+        margin: 38px 20px 0 20px;
+
+        gap: 15px;
+    }
+
+    .main-nav a {
+        font-size: 11px;
+        letter-spacing: 0.8px;
+    }
+
+
+    /* HOME */
+
+    .recent-collection {
+        margin-top: 50px;
+    }
+
+    .recent-collection h2 {
+        font-size: 20px;
+        letter-spacing: 3px;
+
+        margin-bottom: 25px;
+    }
+
+
+    /* SLIDER */
+
+    .slider {
+        gap: 5px;
+    }
+
+    .slider img {
+        width: 80%;
+    }
+
+    .slider-button {
+        font-size: 24px;
+
+        padding: 5px;
+    }
+
+
+    /* COLLECTIONS */
+
+    .collection-page {
+        margin-top: 60px;
+    }
+
+    .collection-page h2 {
+        font-size: 22px;
+    }
+
+    .collection-menu button {
+        width: 200px;
+    }
+
+
+    /* PRODUCTS */
+
+    .product-page {
+        margin-top: 55px;
+    }
+
+    .product-page h2 {
+        font-size: 21px;
+
+        letter-spacing: 3px;
+
+        margin-bottom: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 0 25px;
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+    }
+
+    .product-card p {
+        font-size: 13px;
+    }
+
+
+    /* ABOUT / CONTACT */
+
+    .info-page {
+        margin-top: 70px;
+
+        padding: 0 25px;
+    }
+
+    .info-page h2 {
+        font-size: 22px;
+    }
+
+    .info-page p {
+        font-size: 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 55px;
+    }
+}
